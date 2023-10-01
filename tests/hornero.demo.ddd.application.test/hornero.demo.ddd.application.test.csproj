@@ -22,4 +22,11 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\hornero.demo.ddd.domain\hornero.demo.ddd.domain.csproj" />
+    <ProjectReference Include="..\..\src\hornero.demo.ddd.application\hornero.demo.ddd.application.csproj" />
+    <ProjectReference Include="..\..\src\hornero.demo.ddd.kernel\hornero.demo.ddd.kernel.csproj" />
+    <ProjectReference Include="..\..\src\hornero.demo.ddd.infrastructure\hornero.demo.ddd.infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
