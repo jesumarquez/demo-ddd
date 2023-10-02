@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AC59F20F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hornero.demo.ddd.application.test", "tests\hornero.demo.ddd.application.test\hornero.demo.ddd.application.test.csproj", "{8E9968D3-E2C6-46B8-B7DF-93E97B6F3A9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hornero.demo.ddd.kernel", "src\hornero.demo.ddd.kernel\hornero.demo.ddd.kernel.csproj", "{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,11 +78,24 @@ Global
 		{8E9968D3-E2C6-46B8-B7DF-93E97B6F3A9C}.Release|x64.Build.0 = Release|Any CPU
 		{8E9968D3-E2C6-46B8-B7DF-93E97B6F3A9C}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E9968D3-E2C6-46B8-B7DF-93E97B6F3A9C}.Release|x86.Build.0 = Release|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Debug|x64.Build.0 = Debug|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Debug|x86.Build.0 = Debug|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Release|x64.ActiveCfg = Release|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Release|x64.Build.0 = Release|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Release|x86.ActiveCfg = Release|Any CPU
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{C4162913-EEF6-49B5-A032-886B3B3E0FA2} = {4CE1BE05-CB61-4940-B44E-113106654258}
 		{D6A55DA5-30EA-4ADD-A2D2-25C74C530553} = {4CE1BE05-CB61-4940-B44E-113106654258}
 		{E4DAB265-B61A-4BE8-A3B6-9C520D3D112D} = {4CE1BE05-CB61-4940-B44E-113106654258}
 		{8E9968D3-E2C6-46B8-B7DF-93E97B6F3A9C} = {AC59F20F-9449-41F3-AF91-181A70E4D3CC}
+		{DBF6ABC7-279D-4787-93D2-5A7D6AA2C836} = {4CE1BE05-CB61-4940-B44E-113106654258}
 	EndGlobalSection
 EndGlobal

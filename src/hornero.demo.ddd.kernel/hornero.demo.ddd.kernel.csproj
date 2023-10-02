@@ -5,9 +5,5 @@
     <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-  
-  <ItemGroup>
-    <ProjectReference Include="..\hornero.demo.ddd.kernel\hornero.demo.ddd.kernel.csproj" />
-  </ItemGroup>
 
 </Project>
