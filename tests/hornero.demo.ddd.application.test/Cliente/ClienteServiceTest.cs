@@ -2,19 +2,26 @@ using hornero.demo.ddd.application.Services;
 using hornero.demo.ddd.domain.ClienteAgregates;
 using hornero.demo.ddd.infrastructure.Repositories;
 using hornero.demo.ddd.kernel;
+using Moq;
 
 namespace hornero.demo.ddd.application.test;
 
 public class ClienteServiceTest
 {
     [Fact]
-    public void ClientService_CrearCliente()
+    public async void ClientService_CrearCliente()
     {
-        IRepository<Cliente,Guid> clienteReposity = new ClienteRepository();
-        var clienteService = new ClienteService(clienteReposity);
+        Cliente clienteEsperado = Cliente.CrearNuevoCliente("pedro","perez", new Email("pedroperez@email.com"));
 
-        var cliente = clienteService.CrearCliente("pedro","perez", new Email("pedroperez@email.com"));
+        Mock<IRepository<Cliente,Guid>> clienteReposity = new Mock<IRepository<Cliente, Guid>>();
+        clienteReposity
+            .Setup(r => r.Add(It.IsAny<Cliente>()))
+            .Returns(Task.FromResult(clienteEsperado));
 
-        Assert.NotNull(cliente);
+        var clienteService = new ClienteService(clienteReposity.Object);
+
+        var cliente = await clienteService.CrearCliente("pedro","perez", new Email("pedroperez@email.com"));
+
+        Assert.True(clienteEsperado.Equals(cliente), "Los datos del cliente creado no son los esperados.");
     }
 }

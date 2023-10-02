@@ -1,4 +1,5 @@
 using System;
+using System.Threading.Tasks;
 using hornero.demo.ddd.domain.ClienteAgregates;
 using hornero.demo.ddd.domain.interfaces;
 using hornero.demo.ddd.kernel;
@@ -14,12 +15,10 @@ public class ClienteService : IClienteService
         _clienteRepository = clienteRepository;
     }
     
-    public Cliente CrearCliente(string nombre, string apellido, Email email)
+    public Task<Cliente> CrearCliente(string nombre, string apellido, Email email)
     {
         var nuevoCliente = Cliente.CrearNuevoCliente(nombre, apellido, email);
 
-        _clienteRepository.Add(nuevoCliente);
-
-        return nuevoCliente;
+        return _clienteRepository.Add(nuevoCliente);
     }
 }
