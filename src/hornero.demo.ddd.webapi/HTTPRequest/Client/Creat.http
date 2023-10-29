@@ -1,0 +1,8 @@
+POST https://localhost:7017/cliente
+Content-Type: application/json
+
+{
+    "Nombre": "Jesu",
+    "Apellido": "Marquez",
+    "Email": "me.email.com"
+}
